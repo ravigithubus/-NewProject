@@ -1,0 +1,28 @@
+<div class="container">
+    <img src="{{food.imageUrl}}" [alt]="food.name">
+
+    <div class="details">
+        <div class="headers">
+            <span class="name">
+                {{food.name}}
+            </span>
+        </div>
+        <div class="origins">
+            <span *ngFor="let origin of food.origins">
+                    {{origin}}
+            </span>
+        </div>
+        <div class="cook-time">
+            <span>
+                Time to cook about&nbsp;<strong>{{food.cookTime}}</strong>&nbsp;minuts
+            </span>
+        </div>
+
+        <div class="price">
+            <span>
+                {{food.price|currency}}
+            </span>
+        </div>
+        <button>Add to cart</button>
+    </div>
+</div>

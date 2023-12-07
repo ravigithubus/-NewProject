@@ -1,0 +1,75 @@
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+li{
+    list-style-type: none;
+    width: 350px;
+    height:400px;
+    border:1px solid #bbb7b7;
+    border-radius: 16px;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px lightblue;
+}
+li a{
+    width: 100%;
+}
+li:hover{
+    
+    opacity:0.7;
+}
+
+.content{
+    margin-left:15px;
+    color: #8C8C8C;
+    font-weight: 400;
+}
+.foodname{
+    color: black;
+    font-weight: 800;
+    opacity: 0.7;
+}
+
+img{
+    max-width:348px;
+    max-height:330px;
+     border-top-right-radius: 16px;
+     border-top-left-radius: 16px;  
+}
+
+.product-item-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.origins{
+    flex:9;
+}
+.origins span{
+    border-radius: 2rem;
+    background-color: whitesmoke;
+    display: inline-block;
+    font-size: 0.8rem;
+    color:gray;
+    margin-right: 0.3rem;
+    padding: 0 0.5rem;
+    margin-top: 0.2rem;
+}
+.cook-time{
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+    flex: 3;
+    text-align: right;
+}
+
+.price{
+    background: white;
+    padding: 0.3rem 100% 0 0;
+    color:#414141;
+    margin-top: 0.7rem;
+    font-size:1.1rem;
+}
